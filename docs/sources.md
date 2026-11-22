@@ -27,4 +27,4 @@ Licence labels below were checked on the linked project pages on 22 November 202
 | [GSM8K](https://huggingface.co/datasets/openai/gsm8k) | Maths exercises and evaluation | MIT |
 | [ARC](https://huggingface.co/datasets/allenai/ai2_arc) | Multiple-choice exercises and evaluation | CC BY-SA 4.0 |
 
-Claude assisted with implementation and evaluation; Qwen wrote the custom training conversations. Visitors' demo chats are never used as training text.
+Claude assisted with implementation and evaluation, and no text it wrote was used to train Ping; Qwen wrote the custom training conversations. Visitors' demo chats are never used as training text.

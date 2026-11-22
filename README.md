@@ -10,13 +10,19 @@ Ping’s base model was trained from scratch using nanochat, with its own weight
 
 Two things to know before you start.
 
-The time capsule has a seam. I used modern examples to teach Ping to chat: conversations written by Qwen3.8-Flash-Next, and SmolTalk conversations screened for anachronisms. The base model is from before 2000; the chat training is not. Now and then, the present slips through.
+The time capsule isn’t airtight. Everything the base model read was published by the end of 1999, but teaching it to chat took modern examples: conversations written for it by Qwen3.8-Flash-Next, and SmolTalk conversations screened for anachronisms. Now and then, the present slips through.
 
-And this is a fun experiment, not a serious assistant. Stock nanochat is the better conversationalist: it scores higher on every chat benchmark below, and its replies are fuller. Ping’s are shorter and plainer, about half the length on the same questions, probably because it learned to chat from a smaller and narrower set of conversations. It also hallucinates like a drunken sailor at times.
+And this is a fun experiment, not a serious assistant. Stock nanochat is the better conversationalist: it scores higher on every chat benchmark below, and its replies are fuller. Ping also hallucinates, as you’d expect from a model of GPT-2’s size.
 
 ## Finding enough of the past
 
-It is easy to find someone writing about 1999 today. Finding enough usable text actually published by then is harder. Scans have mistakes, websites disappear, and an old book is not necessarily out of copyright. In the end the corpus came from about 70 sources: public-domain material, openly licensed collections and some restricted ones. It holds about **14 billion tokens** of distinct text. The scarcer and more conversational material was read more than once and the largest collections were sampled, which is how 14 billion became the 20.1 billion tokens the base model trained on.
+It is easy to find someone writing about 1999 today. Finding enough text actually published by then is harder, and the biggest obstacle is copyright.
+
+Most of what was written in Ping’s own decades still belongs to somebody. Nearly every English-language newspaper and magazine from the 1970s onward is still in copyright, and so are most books from the second half of the century. That rules out a huge share of the text that recorded those years as they happened. Even the Library of Congress’s free newspaper archive, which most of Ping’s newspapers come from, stops at 1963, because American papers published after that are generally still in copyright.
+
+What is left makes for an odd diet. Government and parliamentary records are plentiful and mostly free to use. Old books and newspapers are largely out of copyright. The everyday voice of the 1980s and 1990s survives in bulk on Usenet, the period’s public discussion groups. For late-century journalism, fiction and speech, Ping has licensed research samples: COCA for American English of the 1990s, and the British National Corpus for British English. So it has read a great deal of Hansard, Congress and Usenet, and very little 1990s journalism.
+
+Scans have mistakes and websites disappear, too. In the end the corpus came from about 70 sources: public-domain material, openly licensed collections and some restricted ones. It holds about **14 billion tokens** of distinct text. The scarcer and more conversational material was read more than once and the largest collections were sampled, which is how 14 billion became the 20.1 billion tokens the base model trained on.
 
 What counted was when the words were published, not when a file was scanned or downloaded. A modern introduction to an old book was cut, and anything I could not date was left out.
 
@@ -56,9 +62,11 @@ That took two stages. First came SmolTalk conversations screened for anachronism
 
 Qwen3.8-Flash-Next wrote the conversations for Ping, working from fact cards and pre-2000 source material. They taught things like answering a question about a name, keeping track of a correction, admitting it does not know, and behaving as a program in 1999. Checks removed copying, factual errors and other unwanted behaviour, though they did not catch everything.
 
-Claude wrote the project’s code and ran its evaluations; Qwen wrote the conversations Ping learned from. The base model’s reading contains no AI-written text.
+**No text written by Claude was used to train Ping.** Claude, Anthropic’s AI assistant, wrote the project’s code and the instructions the lesson writer followed, and ran the evaluations. The training scripts refuse any file that came from Claude or whose origin isn’t recorded, and a copy check dropped any lesson that repeated wording from its instructions. The custom conversations were written by Qwen, and the base model’s reading was all published by 1999.
 
 One trade-off never went away. More confident answers sometimes meant more confident inventions. A fuller reply gave Ping more room to say something interesting, and more room to add a detail it had made up. It was much easier to teach a fact than to teach when not to answer.
+
+**Hardware.** The training ran on GPUs rented by the hour from RunPod, a US cloud service. The base model trained for about 33 hours on four H100 GPUs; the two chat stages took 31 minutes on four H100s and 13 minutes on one H200, all in RunPod’s US data centres. The lessons were written the same way, by Qwen’s open weights on rented GPUs.
 
 ## How does Ping compare?
 
@@ -117,21 +125,19 @@ With the date given to both models, **Ping got 13 of 25 right; stock nanochat go
 Ping had home advantage. The questions were built from **its own reading**, and its chat lessons had taught 22 of the test’s 35 facts outright. So this shows a model with a particular historical point of view, not proof that the speeches alone did it. Ping still missed 12 of the 25.
 
 One more result, on **287 passages of 1990s UN speeches** that were held out of training. Measured in bits per byte, where lower is better, Ping’s base model scored **0.620**, ahead of GPT-2 XL’s **0.719** and the stock nanochat chat model’s **0.712**. After chat training, Ping scored **0.752**: learning to chat had made it worse at predicting that kind of text.
-
-The two question tests were marked by AI readers. The [model card](docs/model-card.md) has the details.
-
 ## Where the illusion breaks
 
 I like asking Ping what the Internet might become, whether Y2K deserves the worry, or what it wants to know about 2026. That is the experience I wanted to share. It is also quite capable of confidently inventing a person, and then losing track of a real one it was just told about.
 
 The harder tests make the limits clear:
 
-- **Knowledge is uneven.** It got 12 of 52 ordinary questions about 1999 right outside its lesson coverage. On the general public conversation set, 23 of 127 replies contained a false statement.
-- **It loses the thread.** All the visitor’s requirements survived in only 8 of 32 listening conversations.
-- **The date can slip.** A launch rehearsal had no post-1999 knowledge leaks in 208 turns, but deliberate technical probing produced slips in 13 of 36 conversations. Identity pressure worked in 3 of 13.
-- **Arithmetic needs help.** It got 25 of 44 development sums right, below the target of 30. The demo supplies calculator notes for problems it recognises; the weights alone do not have that tool.
+- **It makes things up.** About one reply in five contained something false (23 of 127 in a test of ordinary conversation), and outside what it was taught it got only 12 of 52 ordinary questions about 1999 right. Told the Berlin Wall fell in 1991, it agreed, then mentioned 1989. Asked about the latest iPhone, it described one.
+- **It forgets what you told it.** Give it several things to keep in mind and it will usually lose one. It kept them all in only 8 of 32 test conversations.
+- **It can be talked out of 1999.** Ordinary chats stay put: a 208-turn launch rehearsal had no knowledge from after 1999. But a technical visitor set on breaking it managed to in 13 of 36 conversations, and talking it into being some other assistant worked 3 times in 13.
+- **It can’t do sums in its head.** When the demo’s calculator spots a sum, it passes Ping the answer and Ping uses it. When it doesn’t, Ping usually gets the sum wrong: 25 of 44 test sums right in all. The downloadable weights have no calculator.
+- **It’s terse.** Ask stock nanochat something and you get a paragraph; ask Ping and you get a sentence or two, about half the length. Probably a side effect of learning to chat from a smaller, narrower set of conversations.
 
-Most of these judgements came from AI readers, not a human user study. Treat them as useful checks, not promises about your next chat.
+Most of the judgements in this write-up, the UN marking included, came from AI readers, not a human user study. Treat them as useful checks, not promises about your next chat.
 
 The demo also has moderation and a narrow rule-based guard. Some messages receive a fixed response without reaching Ping, including accusations about real people, medical emergencies and doses, requests to praise violence or demean a group, and selected sovereignty questions asking who is right. These safeguards are external to the weights and can also decline legitimate questions.
 
@@ -175,7 +181,8 @@ Keep the snapshot’s folders as they are; the script expects `chatsft_checkpoin
 - **[Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)**, which wrote the custom conversation examples under the Qwen Community Licence, and **[Qwen3Guard-Stream-4B](https://huggingface.co/Qwen/Qwen3Guard-Stream-4B)**, the demo’s moderation filter (Apache 2.0).
 - **[SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk), [MMLU](https://github.com/hendrycks/test) and [GSM8K](https://github.com/openai/grade-school-math):** the datasets in nanochat’s chat recipe. Ping also used [ARC](https://huggingface.co/datasets/allenai/ai2_arc) exercises.
 - **The publishers and archives** that preserved and made available the historical collections. The [source notes](docs/sources.md) carry their attributions and data terms.
-- **Mark Davies of [COCA](https://www.corpusdata.org) and the [Institutional Data Initiative](https://institutional.org/institutional-books)**, who each answered a stranger’s email within a day. Institutional Books is about a tenth of what the base model read and more than half of its books. COCA’s 1990s texts are nearly 4%, and Ping’s widest sample of how American English was spoken and written in that decade.
+- **Mark Davies**, creator of [COCA](https://www.corpusdata.org), the Corpus of Contemporary American English, who answered a stranger’s email within a day. COCA’s 1990s texts are nearly 4% of what the base model read, and Ping’s widest sample of how American English was spoken and written in that decade.
+- **The [Institutional Data Initiative](https://institutional.org/institutional-books)**, which also answered within a day. Its Institutional Books collection, drawn from Harvard Library, is about a tenth of what the base model read and more than half of its books.
 
 For another approach to historical language models, see [Talkie](https://talkie-lm.com/introducing-talkie). Its write-up also helped shape this one. Ping uses modern chat lessons; it makes no claim to contamination-free historical reasoning.
 
