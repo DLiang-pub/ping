@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Asked as chat, the stock nanochat model is ahead of Ping">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="56.0" y="70.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="32" font-weight="650" fill="#0b0b0b" text-anchor="start">Asked as chat, the stock nanochat model is ahead of Ping</text>
+<text x="56.0" y="104.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="400" fill="#52514e" text-anchor="start">Share of questions right when the question is put as a chat message. Both are 32-layer nanochat models.</text>
+<text x="56.0" y="625.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#898781" text-anchor="start">Whiskers are 95% intervals. Chance is 25% on the three multiple-choice sets; GSM8K is free-form arithmetic.</text>
+<text x="56.0" y="645.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#898781" text-anchor="start">Both models measured by this project on one harness, November 2026.</text>
+<rect x="56" y="130.0" width="14" height="14" rx="3" fill="#2a78d6"/>
+<text x="78.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">Ping</text>
+<text x="132.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#52514e" text-anchor="start">1.68B parameters · 20B training tokens</text>
+<rect x="456" y="130.0" width="14" height="14" rx="3" fill="#898781"/>
+<text x="518.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">Stock nanochat d32</text>
+<text x="705.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#52514e" text-anchor="start">1.74B parameters · 38B training tokens</text>
+<line x1="300.0" y1="184.0" x2="300.0" y2="547.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="300.0" y="567.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">0%</text>
+<line x1="506.2" y1="184.0" x2="506.2" y2="547.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="506.2" y="567.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">25%</text>
+<line x1="712.5" y1="184.0" x2="712.5" y2="547.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="712.5" y="567.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">50%</text>
+<line x1="918.8" y1="184.0" x2="918.8" y2="547.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="918.8" y="567.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">75%</text>
+<line x1="506.2" y1="186.0" x2="506.2" y2="449.8" stroke="#52514e" stroke-width="1"/>
+<text x="511.2" y="195.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start">chance</text>
+<text x="56.0" y="234.6" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">ARC-Easy</text>
+<text x="56.0" y="254.6" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">2,376 questions</text>
+<path d="M300.0,211.6 H768.9 A4,4 0 0 1 772.9,215.6 V229.6 A4,4 0 0 1 768.9,233.6 H300.0 Z" fill="#2a78d6"/>
+<line x1="756.4" y1="222.6" x2="789.2" y2="222.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="756.4" y1="217.6" x2="756.4" y2="227.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="789.2" y1="217.6" x2="789.2" y2="227.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="797.2" y="228.6" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">57.3%</text>
+<path d="M300.0,235.6 H854.7 A4,4 0 0 1 858.7,239.6 V253.6 A4,4 0 0 1 854.7,257.6 H300.0 Z" fill="#898781"/>
+<line x1="842.9" y1="246.6" x2="873.9" y2="246.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="842.9" y1="241.6" x2="842.9" y2="251.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="873.9" y1="241.6" x2="873.9" y2="251.6" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="881.9" y="252.6" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">67.7%</text>
+<text x="56.0" y="323.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">ARC-Challenge</text>
+<text x="56.0" y="343.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">1,172 questions</text>
+<path d="M300.0,300.9 H651.5 A4,4 0 0 1 655.5,304.9 V318.9 A4,4 0 0 1 651.5,322.9 H300.0 Z" fill="#2a78d6"/>
+<line x1="632.3" y1="311.9" x2="679.0" y2="311.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="632.3" y1="306.9" x2="632.3" y2="316.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="679.0" y1="306.9" x2="679.0" y2="316.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="687.0" y="317.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">43.1%</text>
+<path d="M300.0,324.9 H706.4 A4,4 0 0 1 710.4,328.9 V342.9 A4,4 0 0 1 706.4,346.9 H300.0 Z" fill="#898781"/>
+<line x1="686.8" y1="335.9" x2="734.0" y2="335.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="686.8" y1="330.9" x2="686.8" y2="340.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="734.0" y1="330.9" x2="734.0" y2="340.9" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="742.0" y="341.9" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">49.7%</text>
+<text x="56.0" y="413.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">MMLU</text>
+<text x="56.0" y="433.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">14,042 questions</text>
+<path d="M300.0,390.1 H602.9 A4,4 0 0 1 606.9,394.1 V408.1 A4,4 0 0 1 602.9,412.1 H300.0 Z" fill="#2a78d6"/>
+<line x1="600.4" y1="401.1" x2="613.5" y2="401.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="600.4" y1="396.1" x2="600.4" y2="406.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="613.5" y1="396.1" x2="613.5" y2="406.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="621.5" y="407.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">37.2%</text>
+<path d="M300.0,414.1 H629.3 A4,4 0 0 1 633.3,418.1 V432.1 A4,4 0 0 1 629.3,436.1 H300.0 Z" fill="#898781"/>
+<line x1="626.6" y1="425.1" x2="640.0" y2="425.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="626.6" y1="420.1" x2="626.6" y2="430.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="640.0" y1="420.1" x2="640.0" y2="430.1" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="648.0" y="431.1" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">40.4%</text>
+<text x="56.0" y="502.4" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">GSM8K</text>
+<text x="56.0" y="522.4" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">1,319 sums in words</text>
+<path d="M300.0,479.4 H383.6 A4,4 0 0 1 387.6,483.4 V497.4 A4,4 0 0 1 383.6,501.4 H300.0 Z" fill="#2a78d6"/>
+<line x1="374.8" y1="490.4" x2="402.2" y2="490.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="374.8" y1="485.4" x2="374.8" y2="495.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="402.2" y1="485.4" x2="402.2" y2="495.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="410.2" y="496.4" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">10.6%</text>
+<path d="M300.0,503.4 H398.0 A4,4 0 0 1 402.0,507.4 V521.4 A4,4 0 0 1 398.0,525.4 H300.0 Z" fill="#898781"/>
+<line x1="388.2" y1="514.4" x2="417.5" y2="514.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="388.2" y1="509.4" x2="388.2" y2="519.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="417.5" y1="509.4" x2="417.5" y2="519.4" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="425.5" y="520.4" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">12.4%</text>
+<text x="56" y="664" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Counts for Ping and stock nanochat leave out their embedding lookup tables (1.14B and 0.13B); totals are in docs/parameter-counts.md.</text>
+</svg>

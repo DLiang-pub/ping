@@ -1,0 +1,223 @@
+{
+ "sources": {
+  "Ping and GPT-2 rows": "measured by this project on one harness, November 2026",
+  "stock nanochat d32, chat rows": "measured by this project on karpathy/nanochat-d32 (step 650)",
+  "stock nanochat d32 CORE": "0.3168, its author's published figure for its base model (not measured here: the base is not public)"
+ },
+ "core": {
+  "Ping": {
+   "value": 0.246632
+  },
+  "Ping base": {
+   "value": 0.2437
+  },
+  "GPT-2 XL": {
+   "value": 0.2541
+  },
+  "GPT-2 Large": {
+   "value": 0.2165
+  },
+  "stock nanochat d32": {
+   "value": 0.3168,
+   "published": true
+  }
+ },
+ "likelihood": {
+  "ARC-Easy": {
+   "Ping": {
+    "value": 0.5963804713804713,
+    "right": 1417,
+    "of": 2376,
+    "interval": [
+     0.576512683557756,
+     0.6159371110665021
+    ]
+   },
+   "Ping base": {
+    "value": 0.5669,
+    "right": 1347,
+    "of": 2376,
+    "interval": [
+     0.5469032699039224,
+     0.5867190765819162
+    ]
+   },
+   "GPT-2 XL": {
+    "value": 0.5762,
+    "right": 1369,
+    "of": 2376,
+    "interval": [
+     0.5562012846223864,
+     0.595909688421241
+    ]
+   },
+   "GPT-2 Large": {
+    "value": 0.532,
+    "right": 1264,
+    "of": 2376,
+    "interval": [
+     0.511887640733712,
+     0.5519821601022864
+    ]
+   }
+  },
+  "ARC-Challenge": {
+   "Ping": {
+    "value": 0.3378839590443686,
+    "right": 396,
+    "of": 1172,
+    "interval": [
+     0.311373516068399,
+     0.36545366405030955
+    ]
+   },
+   "Ping base": {
+    "value": 0.3063,
+    "right": 359,
+    "of": 1172,
+    "interval": [
+     0.28059171515729486,
+     0.33330181056347796
+    ]
+   },
+   "GPT-2 XL": {
+    "value": 0.2867,
+    "right": 336,
+    "of": 1172,
+    "interval": [
+     0.2615293902350523,
+     0.3132432151843011
+    ]
+   },
+   "GPT-2 Large": {
+    "value": 0.2568,
+    "right": 301,
+    "of": 1172,
+    "interval": [
+     0.23263660768137373,
+     0.28260416249668907
+    ]
+   }
+  },
+  "MMLU": {
+   "Ping": {
+    "value": 0.305440820395955,
+    "right": 4289,
+    "of": 14042,
+    "interval": [
+     0.29787669763188296,
+     0.3131113648494098
+    ]
+   },
+   "Ping base": {
+    "value": 0.3003,
+    "right": 4217,
+    "of": 14042,
+    "interval": [
+     0.2927869920622873,
+     0.307948925652773
+    ]
+   },
+   "GPT-2 XL": {
+    "value": 0.3032,
+    "right": 4257,
+    "of": 14042,
+    "interval": [
+     0.29561446803449987,
+     0.31081708566180066
+    ]
+   },
+   "GPT-2 Large": {
+    "value": 0.2944,
+    "right": 4134,
+    "of": 14042,
+    "interval": [
+     0.2869210935291191,
+     0.3019963795248677
+    ]
+   }
+  }
+ },
+ "chat": {
+  "ARC-Easy": {
+   "Ping": {
+    "value": 0.5732323232323232,
+    "right": 1362,
+    "of": 2376,
+    "interval": [
+     0.553242055465937,
+     0.5929861727638486
+    ]
+   },
+   "stock nanochat d32": {
+    "value": 0.6772,
+    "right": 1609,
+    "of": 2376,
+    "interval": [
+     0.6581157027716524,
+     0.6956893781751277
+    ]
+   }
+  },
+  "ARC-Challenge": {
+   "Ping": {
+    "value": 0.4308873720136519,
+    "right": 505,
+    "of": 1172,
+    "interval": [
+     0.4028078125450574,
+     0.45941851161081315
+    ]
+   },
+   "stock nanochat d32": {
+    "value": 0.4974,
+    "right": 583,
+    "of": 1172,
+    "interval": [
+     0.4688702270044232,
+     0.5260270442606091
+    ]
+   }
+  },
+  "MMLU": {
+   "Ping": {
+    "value": 0.37202677681241986,
+    "right": 5224,
+    "of": 14042,
+    "interval": [
+     0.36406829407368757,
+     0.38005525946909535
+    ]
+   },
+   "stock nanochat d32": {
+    "value": 0.404,
+    "right": 5673,
+    "of": 14042,
+    "interval": [
+     0.3959134931826639,
+     0.4121435742495406
+    ]
+   }
+  },
+  "GSM8K": {
+   "Ping": {
+    "value": 0.10614101592115238,
+    "right": 140,
+    "of": 1319,
+    "interval": [
+     0.09064684534502337,
+     0.12392267617672856
+    ]
+   },
+   "stock nanochat d32": {
+    "value": 0.1236,
+    "right": 163,
+    "of": 1319,
+    "interval": [
+     0.10690329055853282,
+     0.14243986138670267
+    ]
+   }
+  }
+ }
+}

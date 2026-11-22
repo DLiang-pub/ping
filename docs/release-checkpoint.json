@@ -1,0 +1,23 @@
+{
+  "model": "Ping",
+  "release_tag": "ping",
+  "step": 559,
+  "frozen_date": "2026-11-18",
+  "total_parameters": 2818575450,
+  "runtime": {
+    "repository": "https://github.com/karpathy/nanochat",
+    "commit": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd"
+  },
+  "weights_in_this_repository": false,
+  "files": {
+    "chatsft_checkpoints/ping/model_000559.pt": {
+      "bytes": 8992693942,
+      "sha256": "3a463f98b9544f009558219a052567800f52c9167e6ff7b993710416d8f016d3"
+    },
+    "chatsft_checkpoints/ping/meta_000559.json": {
+      "bytes": 993,
+      "sha256": "4ed8c86ac51e0538b5c6d50c4846467fce6de976650b4cfddc8d739c319c9833"
+    }
+  },
+  "weights": "https://huggingface.co/onlatentstates/ping"
+}

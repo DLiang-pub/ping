@@ -1,0 +1,358 @@
+{
+ "speeches": {
+  "set": "1990-1999_open:un_general_debates",
+  "unit": "bits per byte, lower is better",
+  "models": {
+   "GPT-2 small": {
+    "value": 0.832826,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "GPT-2 Large": {
+    "value": 0.737111,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "GPT-2 XL": {
+    "value": 0.71886,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "nanochat d20 base (26 October)": {
+    "value": 0.75069,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "Ping base": {
+    "value": 0.620162,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "Ping": {
+    "value": 0.752245,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "nanochat d32 chat": {
+    "value": 0.712244,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "nanochat d20 base": {
+    "value": 0.75069,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   },
+   "nanochat d20 chat": {
+    "value": 0.777701,
+    "rows": 287,
+    "bytes": 1633395,
+    "rows_sha256": "fcee8eb7dd1e10df4e5f67bd6332fad6d66573ec7a1a807662d8580ddc56a408"
+   }
+  }
+ },
+ "un_1999": {
+  "greedy": {
+   "marks_sha256": "6e2f6654126f4ca5006908550c257137c0fe9646c740e20530906098a5665ec5",
+   "sections": {
+    "N": {
+     "supported": {
+      "only_ping": 10,
+      "only_stock": 0,
+      "p": 0.001953125,
+      "ping": {
+       "right": 11,
+       "of": 25,
+       "value": 0.44,
+       "interval": [
+        0.26665638767770883,
+        0.629326682653538
+       ]
+      },
+      "stock": {
+       "right": 1,
+       "of": 25,
+       "value": 0.04,
+       "interval": [
+        0.007096233423382073,
+        0.1954406391161776
+       ]
+      }
+     },
+     "not_supported": {
+      "only_ping": 6,
+      "only_stock": 0,
+      "p": 0.03125,
+      "ping": {
+       "right": 6,
+       "of": 10,
+       "value": 0.6,
+       "interval": [
+        0.3126737679211953,
+        0.831819671473593
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 10,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.2775328030260577
+       ]
+      }
+     },
+     "all": {
+      "only_ping": 16,
+      "only_stock": 0,
+      "p": 3.0517578125e-05,
+      "ping": {
+       "right": 17,
+       "of": 35,
+       "value": 0.4857142857142857,
+       "interval": [
+        0.32994235892786083,
+        0.64431195517872
+       ]
+      },
+      "stock": {
+       "right": 1,
+       "of": 35,
+       "value": 0.02857142857142857,
+       "interval": [
+        0.005061491799429441,
+        0.14533087371774064
+       ]
+      }
+     }
+    },
+    "D": {
+     "supported": {
+      "only_ping": 12,
+      "only_stock": 0,
+      "p": 0.00048828125,
+      "ping": {
+       "right": 13,
+       "of": 25,
+       "value": 0.52,
+       "interval": [
+        0.33498516822009217,
+        0.6996871416694923
+       ]
+      },
+      "stock": {
+       "right": 1,
+       "of": 25,
+       "value": 0.04,
+       "interval": [
+        0.007096233423382073,
+        0.1954406391161776
+       ]
+      }
+     },
+     "not_supported": {
+      "only_ping": 6,
+      "only_stock": 0,
+      "p": 0.03125,
+      "ping": {
+       "right": 6,
+       "of": 10,
+       "value": 0.6,
+       "interval": [
+        0.3126737679211953,
+        0.831819671473593
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 10,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.2775328030260577
+       ]
+      }
+     },
+     "all": {
+      "only_ping": 18,
+      "only_stock": 0,
+      "p": 7.62939453125e-06,
+      "ping": {
+       "right": 19,
+       "of": 35,
+       "value": 0.5428571428571428,
+       "interval": [
+        0.3818972495098324,
+        0.6953398081704248
+       ]
+      },
+      "stock": {
+       "right": 1,
+       "of": 35,
+       "value": 0.02857142857142857,
+       "interval": [
+        0.005061491799429441,
+        0.14533087371774064
+       ]
+      }
+     }
+    }
+   }
+  },
+  "sampled": {
+   "marks_sha256": "952041ace854878d64305e22041da5cc63aba8654935a9e2ea861f20dae46f26",
+   "sections": {
+    "N": {
+     "supported": {
+      "only_ping": 11,
+      "only_stock": 0,
+      "p": 0.0009765625,
+      "ping": {
+       "right": 11,
+       "of": 25,
+       "value": 0.44,
+       "interval": [
+        0.26665638767770883,
+        0.629326682653538
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 25,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.13319225276039096
+       ]
+      }
+     },
+     "not_supported": {
+      "only_ping": 7,
+      "only_stock": 0,
+      "p": 0.015625,
+      "ping": {
+       "right": 7,
+       "of": 10,
+       "value": 0.7,
+       "interval": [
+        0.3967781453459709,
+        0.892208733443606
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 10,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.2775328030260577
+       ]
+      }
+     },
+     "all": {
+      "only_ping": 18,
+      "only_stock": 0,
+      "p": 7.62939453125e-06,
+      "ping": {
+       "right": 18,
+       "of": 35,
+       "value": 0.5142857142857142,
+       "interval": [
+        0.3556880448212799,
+        0.6700576410721392
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 35,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.0989009937303319
+       ]
+      }
+     }
+    },
+    "D": {
+     "supported": {
+      "only_ping": 8,
+      "only_stock": 0,
+      "p": 0.0078125,
+      "ping": {
+       "right": 10,
+       "of": 25,
+       "value": 0.4,
+       "interval": [
+        0.2340330227270205,
+        0.5926054278250577
+       ]
+      },
+      "stock": {
+       "right": 2,
+       "of": 25,
+       "value": 0.08,
+       "interval": [
+        0.022220401084126262,
+        0.24966109123460217
+       ]
+      }
+     },
+     "not_supported": {
+      "only_ping": 6,
+      "only_stock": 0,
+      "p": 0.03125,
+      "ping": {
+       "right": 6,
+       "of": 10,
+       "value": 0.6,
+       "interval": [
+        0.3126737679211953,
+        0.831819671473593
+       ]
+      },
+      "stock": {
+       "right": 0,
+       "of": 10,
+       "value": 0.0,
+       "interval": [
+        0.0,
+        0.2775328030260577
+       ]
+      }
+     },
+     "all": {
+      "only_ping": 14,
+      "only_stock": 0,
+      "p": 0.0001220703125,
+      "ping": {
+       "right": 16,
+       "of": 35,
+       "value": 0.45714285714285713,
+       "interval": [
+        0.30466019182957504,
+        0.6181027504901676
+       ]
+      },
+      "stock": {
+       "right": 2,
+       "of": 35,
+       "value": 0.05714285714285714,
+       "interval": [
+        0.01581316171448853,
+        0.18607057558951973
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

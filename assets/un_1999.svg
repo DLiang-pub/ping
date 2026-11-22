@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="The UN as it stood in 1999: correct answers">
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="56.0" y="70.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="32" font-weight="650" fill="#0b0b0b" text-anchor="start">The UN as it stood in 1999: correct answers</text>
+<text x="56.0" y="104.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="400" fill="#52514e" text-anchor="start">Right answers on 25 facts about the UN as it stood on 31 December 1999: who held which post, the members, Kosovo, East Timor.</text>
+<text x="56.0" y="625.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#898781" text-anchor="start">Built from Ping’s reading: these 25 facts appear in its UN records. Chat lessons cover 22 of the full test’s 35 facts.</text>
+<text x="56.0" y="645.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#898781" text-anchor="start">General UN test: 45/60 vs 47/60, inconclusive. Whiskers: 95% intervals. AI marking; identities often inferable.</text>
+<rect x="56" y="130.0" width="14" height="14" rx="3" fill="#2a78d6"/>
+<text x="78.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">Ping · 1.68B</text>
+<rect x="256" y="130.0" width="14" height="14" rx="3" fill="#898781"/>
+<text x="278.0" y="143.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">Stock nanochat d32 · 1.74B</text>
+<line x1="330.0" y1="192.0" x2="330.0" y2="554.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="330.0" y="574.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">0%</text>
+<line x1="530.0" y1="192.0" x2="530.0" y2="554.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="530.0" y="574.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">25%</text>
+<line x1="730.0" y1="192.0" x2="730.0" y2="554.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="730.0" y="574.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">50%</text>
+<line x1="930.0" y1="192.0" x2="930.0" y2="554.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="930.0" y="574.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#898781" text-anchor="middle">75%</text>
+<text x="56.0" y="287.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">Date given to both</text>
+<text x="56.0" y="307.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">"As of December 1999, who is..."</text>
+<path d="M330.0,248.0 H742.0 A4,4 0 0 1 746.0,252.0 V282.0 A4,4 0 0 1 742.0,286.0 H330.0 Z" fill="#2a78d6"/>
+<line x1="598.0" y1="267.0" x2="889.7" y2="267.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="598.0" y1="262.0" x2="598.0" y2="272.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="889.7" y1="262.0" x2="889.7" y2="272.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="897.7" y="273.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">13 of 25</text>
+<path d="M330.0,288.0 H358.0 A4,4 0 0 1 362.0,292.0 V322.0 A4,4 0 0 1 358.0,326.0 H330.0 Z" fill="#898781"/>
+<line x1="335.7" y1="307.0" x2="486.4" y2="307.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="335.7" y1="302.0" x2="335.7" y2="312.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="486.4" y1="302.0" x2="486.4" y2="312.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="494.4" y="313.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">1 of 25</text>
+<text x="56.0" y="465.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="18" font-weight="600" fill="#0b0b0b" text-anchor="start">No date in the question</text>
+<text x="56.0" y="485.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="14" font-weight="400" fill="#52514e" text-anchor="start">Ping answers from 1999 by design</text>
+<path d="M330.0,426.0 H678.0 A4,4 0 0 1 682.0,430.0 V460.0 A4,4 0 0 1 678.0,464.0 H330.0 Z" fill="#2a78d6"/>
+<line x1="543.3" y1="445.0" x2="833.5" y2="445.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="543.3" y1="440.0" x2="543.3" y2="450.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="833.5" y1="440.0" x2="833.5" y2="450.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="841.5" y="451.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">11 of 25</text>
+<path d="M330.0,466.0 H358.0 A4,4 0 0 1 362.0,470.0 V500.0 A4,4 0 0 1 358.0,504.0 H330.0 Z" fill="#898781"/>
+<line x1="335.7" y1="485.0" x2="486.4" y2="485.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="335.7" y1="480.0" x2="335.7" y2="490.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<line x1="486.4" y1="480.0" x2="486.4" y2="490.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="494.4" y="491.0" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="17" font-weight="600" fill="#0b0b0b" text-anchor="start">1 of 25</text>
+<text x="56" y="664" font-family='system-ui, -apple-system, "Segoe UI", sans-serif' font-size="12" font-weight="400" fill="#52514e" text-anchor="start">Counts for Ping and stock nanochat leave out their embedding lookup tables (1.14B and 0.13B); totals are in docs/parameter-counts.md.</text>
+</svg>
