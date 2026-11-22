@@ -28,7 +28,7 @@ Write-up and charts: [DLiang-pub/ping](https://github.com/DLiang-pub/ping) · De
 | Base training | 9,600 steps; 20.1 billion training tokens |
 | Base publication cutoff | 31 December 1999 |
 | Final chat pass | 113,634 rows; 559 steps |
-| Training hardware | GPUs rented from RunPod, in its US data centres: base about 33 hours on 4× H100; chat stages 31 minutes on 4× H100 and 13 minutes on 1× H200 |
+| Training hardware | GPUs rented from RunPod: base model about 33 hours on 4× H100; chat stages 31 minutes on 4× H100 and 13 minutes on 1× H200 |
 | Frozen checkpoint | 18 November 2026; step 559 |
 | Runtime verified | Public nanochat at commit `92d63d4e8bb4df75c3b71618f31ddde2378b2bcd`; clean-room load on 21 November 2026; the published files checked again on 22 November 2026 |
 
@@ -55,7 +55,7 @@ Post-training used modern text in two stages:
 1. SmolTalk conversations screened for anachronisms, identity lessons, maths and multiple-choice exercises. Some modern technical knowledge was retained.
 2. A final pass combining custom Ping conversations, screened SmolTalk and exercises including GSM8K, MMLU and ARC. Qwen3.8-Flash-Next wrote the custom examples from fact cards and pre-2000 material, followed by filtering. The exercises used MMLU’s auxiliary_train split and the training splits of GSM8K and ARC; rows found to overlap the benchmarks’ test questions were removed.
 
-The 1999 boundary applies to the base model, not all training text or every generated answer. Modern knowledge can still appear. No text written by Claude was used to train Ping: Claude wrote the project’s code and the lesson writer’s instructions, and ran the evaluations; Qwen wrote the custom training conversations. Neither the corpus nor the private lesson files are redistributed. Demo visitors’ chats are never training text.
+The 1999 boundary applies to the base model, not all training text or every generated answer. Modern knowledge can still appear. Claude Code wrote the project’s code and ran its data pipeline, training runs and evaluations; no output from Claude was used to train Ping itself. Qwen wrote the custom training conversations. Neither the corpus nor the private lesson files are redistributed. Demo visitors’ chats are never training text.
 
 See [the project README](https://github.com/DLiang-pub/ping/blob/main/README.md) for the grouped source table and training account. [Source credits](sources.md).
 

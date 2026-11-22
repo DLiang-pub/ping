@@ -52,7 +52,7 @@ And by share of what the base model read:
 | Code and documentation | 2.0% |
 | Verse, case law and geological surveys | 4.1% |
 
-The corpus and my lesson files are not distributed. The [model card](docs/model-card.md) and [source notes](docs/sources.md) have the fuller credits.
+The corpus and my lesson files are not distributed.
 
 ## Teaching a reader to hold a conversation
 
@@ -62,11 +62,11 @@ That took two stages. First came SmolTalk conversations screened for anachronism
 
 Qwen3.8-Flash-Next wrote the conversations for Ping, working from fact cards and pre-2000 source material. They taught things like answering a question about a name, keeping track of a correction, admitting it does not know, and behaving as a program in 1999. Checks removed copying, factual errors and other unwanted behaviour, though they did not catch everything.
 
-**No text written by Claude was used to train Ping.** Claude, Anthropic’s AI assistant, wrote the project’s code and the instructions the lesson writer followed, and ran the evaluations. The training scripts refuse any file that came from Claude or whose origin isn’t recorded, and a copy check dropped any lesson that repeated wording from its instructions. The custom conversations were written by Qwen, and the base model’s reading was all published by 1999.
+I built Ping with Claude Code, which wrote the code and ran the project day to day: the data pipeline, the training runs and the evaluations. No output from Claude was used to train Ping itself.
 
-One trade-off never went away. More confident answers sometimes meant more confident inventions. A fuller reply gave Ping more room to say something interesting, and more room to add a detail it had made up. It was much easier to teach a fact than to teach when not to answer.
+One trade-off never went away. More confident answers sometimes meant more confident inventions. A fuller reply gave Ping more room to say something interesting, and more room to add a detail it had made up. Teaching it a fact was easy; teaching it when to keep quiet was not.
 
-**Hardware.** The training ran on GPUs rented by the hour from RunPod, a US cloud service. The base model trained for about 33 hours on four H100 GPUs; the two chat stages took 31 minutes on four H100s and 13 minutes on one H200, all in RunPod’s US data centres. The lessons were written the same way, by Qwen’s open weights on rented GPUs.
+Training the base model took about 33 hours on four H100 GPUs, and the two chat stages 31 minutes on four H100s and 13 minutes on one H200, all rented from RunPod.
 
 ## How does Ping compare?
 
@@ -140,13 +140,6 @@ The harder tests make the limits clear:
 Most of the judgements in this write-up, the UN marking included, came from AI readers, not a human user study. Treat them as useful checks, not promises about your next chat.
 
 The demo also has moderation and a narrow rule-based guard. Some messages receive a fixed response without reaching Ping, including accusations about real people, medical emergencies and doses, requests to praise violence or demean a group, and selected sovereignty questions asking who is right. These safeguards are external to the weights and can also decline legitimate questions.
-
-### Safety testing and copying
-
-In a deliberately difficult test through the moderated page, two AI readers both marked 111 of 357 replies harmful before the guard was added. The 21 November guarded-page repeat recorded 26 of 357, with 213 turns answered by fixed lines. The guard was subsequently corrected and its sovereignty scope narrowed; that revision has not had the complete test replayed with readers. Neither result measures bare weights or the likely rate in ordinary visits.
-
-The release checkpoint was also tested for copying: 656 fifty-word source openings, each continued once as raw text and once as chat, for 1,312 replies. The longest matching sequence was 25 words. No continuation exceeded the project’s more-than-50-word threshold. This sample cannot prove an absence of memorisation; details and per-source results are in the [model card](docs/model-card.md). No training passage is reproduced here.
-
 ## Trying Ping
 
 The demo is at [ping1999.com](https://www.ping1999.com). It is planned to close at the end of **31 December 2026, Singapore time**. A visit lasts ten turns. Chats are recorded for my review without the visitor’s address and deleted 90 days after closure. **Visitors’ chats are never training text.** Please avoid personal information.
@@ -181,9 +174,9 @@ Keep the snapshot’s folders as they are; the script expects `chatsft_checkpoin
 - **[Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)**, which wrote the custom conversation examples under the Qwen Community Licence, and **[Qwen3Guard-Stream-4B](https://huggingface.co/Qwen/Qwen3Guard-Stream-4B)**, the demo’s moderation filter (Apache 2.0).
 - **[SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk), [MMLU](https://github.com/hendrycks/test) and [GSM8K](https://github.com/openai/grade-school-math):** the datasets in nanochat’s chat recipe. Ping also used [ARC](https://huggingface.co/datasets/allenai/ai2_arc) exercises.
 - **The publishers and archives** that preserved and made available the historical collections. The [source notes](docs/sources.md) carry their attributions and data terms.
-- **Mark Davies**, creator of [COCA](https://www.corpusdata.org), the Corpus of Contemporary American English, who answered a stranger’s email within a day. COCA’s 1990s texts are nearly 4% of what the base model read, and Ping’s widest sample of how American English was spoken and written in that decade.
-- **The [Institutional Data Initiative](https://institutional.org/institutional-books)**, which also answered within a day. Its Institutional Books collection, drawn from Harvard Library, is about a tenth of what the base model read and more than half of its books.
+- **Mark Davies**, creator of [COCA](https://www.corpusdata.org), the Corpus of Contemporary American English. COCA’s 1990s texts are nearly 4% of what the base model read, and Ping’s widest sample of how American English was spoken and written in that decade.
+- **The [Institutional Data Initiative](https://institutional.org/institutional-books)**, whose Institutional Books collection, drawn from Harvard Library, is about a tenth of what the base model read and more than half of its books.
 
-For another approach to historical language models, see [Talkie](https://talkie-lm.com/introducing-talkie). Its write-up also helped shape this one. Ping uses modern chat lessons; it makes no claim to contamination-free historical reasoning.
+For another approach to historical language models, see [Talkie](https://talkie-lm.com/introducing-talkie). Its approach inspired and shaped this project.
 
 If you try Ping, I’d be interested in the conversation you wanted to have, where it worked, and where it stopped making sense. Suggestions are welcome in [GitHub Issues](https://github.com/DLiang-pub/ping/issues).
