@@ -13,6 +13,8 @@ tags:
 
 A small English-language model set on the last evening of 31 December 1999. Its base model was trained from scratch with nanochat on text published by that date, then post-trained with modern conversation data. It is intended for non-commercial experimentation and an openly imperfect historical chat demo.
 
+Ping reflects the culture and values of the texts it was trained on, not the views of its creator.
+
 **Release:** the frozen Ping checkpoint, its tokenizer and a chat script are in the [Hugging Face repository](https://huggingface.co/onlatentstates/ping). The demo is at [ping1999.com](https://www.ping1999.com) until the end of 31 December 2026, Singapore time.
 
 Write-up and charts: [DLiang-pub/ping](https://github.com/DLiang-pub/ping) · Demo: [ping1999.com](https://www.ping1999.com)
@@ -37,6 +39,8 @@ The base model started from random weights. It is not a fine-tune of the stock n
 ## Training data and post-training
 
 The base model’s corpus came from about 70 sources: historical books, newspapers, Usenet posts, government and parliamentary records, UN speeches, science, reference material, code and documentation. Dates refer to the extracted text, not download dates. Modern front matter was removed; unknown dates were excluded. The corpus holds about 14 billion tokens of distinct text; scarcer and more conversational material was read more than once and the largest collections were sampled, giving the 20.1 billion training tokens.
+
+Notable gaps: no film or TV subtitles, no lyrics sites, no newspaper archives from the 1970s on, and almost none of the 1990s web. Books still in copyright and late-century journalism appear mainly as samples in COCA and the BNC.
 
 | Kind of text | Share of the training text |
 |---|---:|
@@ -76,7 +80,7 @@ See [the project README](https://github.com/DLiang-pub/ping/blob/main/README.md)
 
 Except for stock nanochat’s published CORE, the comparisons above were measured by the project, on the datasets’ test splits. CORE is the DCLM benchmark’s score over 22 tasks, as nanochat computes it. Stock nanochat’s base is not public and was not measured here. Stock nanochat was not measured on the likelihood ARC/MMLU rows. As a check on the harness: nanochat’s own reference CORE for GPT-2 XL is 0.257, and its author’s published chat scores for stock d32 (68.0%, 49.9%, 40.5%, 12.7%) are within half a point of the figures measured here.
 
-The base model is the fairer GPT-2 comparison: Ping subsequently received multiple-choice practice. Stock nanochat is the stronger general conversationalist: it leads every chat-format row, and on the 70 questions of the dated UN test below its replies averaged 44 words to Ping's 22. Likelihood and chat results use different scoring procedures. Differences in corpus, compute, architecture and post-training prevent these comparisons from isolating the effect of the historical cutoff.
+The base model is the fairer GPT-2 comparison: Ping subsequently received multiple-choice practice. On likelihood ARC-Challenge and MMLU, Ping and GPT-2 alike barely beat the 25% that random guessing would score. Stock nanochat is the stronger general conversationalist: it leads every chat-format row, and on the 70 questions of the dated UN test below its replies averaged 44 words to Ping's 22. Likelihood and chat results use different scoring procedures. Differences in corpus, compute, architecture and post-training prevent these comparisons from isolating the effect of the historical cutoff.
 
 ### UN evaluations
 

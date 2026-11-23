@@ -11,6 +11,7 @@ The [project README](https://github.com/DLiang-pub/ping/blob/main/README.md) des
 - **UN Security Council records:** Sakamoto and Matsuoka. Selected records cover 1946–1999; see the [UN Digital Library](https://digitallibrary.un.org/).
 - **Encyclopedias from 1999:** selected text; source text is not distributed.
 - **Usenet:** period discussions; posts remain the copyright of their authors.
+- **National Library Singapore Digitised Newspapers:** headlines and opening lines of articles from old Singapore titles, from the [collection on data.gov.sg](https://data.gov.sg/collections/1478/view).
 - Other historical collections include Project Gutenberg, American Stories, Hansard, Oireachtas, US government publications, PubMed, PubMed Central, arXiv, NASA, USGS, patent text, Britannica and Singapore and Malaya collections, as grouped in the README.
 
 ## Chat and evaluation materials

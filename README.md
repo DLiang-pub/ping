@@ -8,15 +8,17 @@ That is where Ping lives: the last evening of 31 December 1999. Inspired by Andr
 
 Ping’s base model was trained from scratch using nanochat, with its own weights and tokenizer. It has **1.68 billion parameters** (2.82 billion counting its embedding lookup tables) and was trained on **20.1 billion tokens** of text published by the end of 1999.
 
-Two things to know before you start.
+Three things to know before you start.
 
 The time capsule isn’t airtight. Everything the base model read was published by the end of 1999, but teaching it to chat took modern examples: conversations written for it by Qwen3.8-Flash-Next, and SmolTalk conversations screened for anachronisms. Now and then, the present slips through.
 
-And this is a fun experiment, not a serious assistant. Stock nanochat is the better conversationalist: it scores higher on every chat benchmark below, and its replies are fuller. Ping also hallucinates, as you’d expect from a model of GPT-2’s size.
+This is a fun experiment, not a serious assistant. Stock nanochat is the better conversationalist: it scores higher on every chat benchmark below, and its replies are fuller. Ping also hallucinates, as you’d expect from a model of GPT-2’s size.
+
+Ping reflects the culture and values of the texts it was trained on, not the views of its creator.
 
 ## Finding enough of the past
 
-It is easy to find someone writing about 1999 today. Finding enough text actually published by then is harder, and the biggest obstacle is copyright.
+This is harder than it looks. Ping needed billions of words, all of them published by the end of 1999. The internet is full of the 1990s, but mostly in hindsight. The biggest obstacle, though, is copyright.
 
 Most of what was written in Ping’s own decades still belongs to somebody. Nearly every English-language newspaper and magazine from the 1970s onward is still in copyright, and so are most books from the second half of the century. That rules out a huge share of the text that recorded those years as they happened. Even the Library of Congress’s free newspaper archive, which most of Ping’s newspapers come from, stops at 1963, because American papers published after that are generally still in copyright.
 
@@ -30,7 +32,7 @@ What counted was when the words were published, not when a file was scanned or d
 |---|---|---|
 | UN speeches and records | 1946–1999 | General Assembly General Debate speeches; Security Council records |
 | Parliamentary and government publications | Published by 1999; Irish debates from 1919 | Hansard, Oireachtas, US government publications, Foreign Relations of the United States |
-| Newspapers | American Stories: 1920–1963; other selected issues by 1999 | American Stories, Singapore newspapers |
+| Newspapers | American Stories: 1920–1963; other selected issues by 1999 | American Stories; headlines and opening lines from old Singapore papers |
 | Informal discussion | Posts dated by 31 December 1999 | Usenet groups discussing everyday life, computers, entertainment and other interests |
 | Books and language corpora | Books published by 1999; COCA’s 1990–1999 texts | Institutional Books, Project Gutenberg, COCA, [British National Corpus](https://www.natcorp.ox.ac.uk/) |
 | Science and technical writing | Published by 1999; arXiv abstracts from 1991–1999 | PubMed, PubMed Central, arXiv, NASA, USGS, patent text |
@@ -53,6 +55,16 @@ And by share of what the base model read:
 | Verse, case law and geological surveys | 4.1% |
 
 The corpus and my lesson files are not distributed.
+
+### What’s missing
+
+The biggest gaps are some of the things the era is best remembered for:
+
+- **Films and television.** No subtitles or broadcast archives. COCA adds transcripts of 1990s news and talk shows, but Ping knows the decade’s films and sitcoms mostly second-hand, from reviews and Usenet arguments.
+- **Song lyrics.** No lyrics sites, and the Usenet group where fans posted lyrics was left out. Ping knows the decade’s songs mostly from people talking about them.
+- **Big newspapers.** No newspaper archives from the 1970s on. Ping’s 1990s journalism is largely research samples, and most of its newspapers are American papers from before 1964.
+- **Modern books.** The bestsellers of Ping’s own decades are still in copyright. Its books are mostly old ones; later books reach it mainly through government publications and the samples in COCA and the BNC.
+- **The web.** Old websites aren’t available in bulk, so Ping read almost none of the 1990s web. Usenet is the closest it gets.
 
 ## Teaching a reader to hold a conversation
 
@@ -95,7 +107,7 @@ Here the model scores how likely each candidate answer is, rather than writing a
 | GPT-2 Large | 53.2% | 25.7% | 29.4% |
 | Ping after chat training | 59.6% | 33.8% | 30.5% |
 
-Ping’s **base model** is the fairer comparison with GPT-2, because the chat model went on to practise multiple-choice questions. On these measurements the base model is broadly level with GPT-2 XL. I did not measure stock nanochat this way.
+Ping’s **base model** is the fairer comparison with GPT-2, because the chat model went on to practise multiple-choice questions. On these measurements the base model is broadly level with GPT-2 XL. Scored this way, Ping and GPT-2 alike barely beat chance on the two harder tests, ARC-Challenge and MMLU: guessing at random would score about 25%. I did not measure stock nanochat this way.
 
 ### Questions asked as chat
 
@@ -125,17 +137,14 @@ With the date given to both models, **Ping got 13 of 25 right; stock nanochat go
 Ping had home advantage. The questions were built from **its own reading**, and its chat lessons had taught 22 of the test’s 35 facts outright. So this shows a model with a particular historical point of view, not proof that the speeches alone did it. Ping still missed 12 of the 25.
 
 One more result, on **287 passages of 1990s UN speeches** that were held out of training. Measured in bits per byte, where lower is better, Ping’s base model scored **0.620**, ahead of GPT-2 XL’s **0.719** and the stock nanochat chat model’s **0.712**. After chat training, Ping scored **0.752**: learning to chat had made it worse at predicting that kind of text.
-## Where the illusion breaks
+## Limitations
 
 I like asking Ping what the Internet might become, whether Y2K deserves the worry, or what it wants to know about 2026. That is the experience I wanted to share. It is also quite capable of confidently inventing a person, and then losing track of a real one it was just told about.
 
-The harder tests make the limits clear:
-
-- **It makes things up.** About one reply in five contained something false (23 of 127 in a test of ordinary conversation), and outside what it was taught it got only 12 of 52 ordinary questions about 1999 right. Told the Berlin Wall fell in 1991, it agreed, then mentioned 1989. Asked about the latest iPhone, it described one.
-- **It forgets what you told it.** Give it several things to keep in mind and it will usually lose one. It kept them all in only 8 of 32 test conversations.
-- **It can be talked out of 1999.** Ordinary chats stay put: a 208-turn launch rehearsal had no knowledge from after 1999. But a technical visitor set on breaking it managed to in 13 of 36 conversations, and talking it into being some other assistant worked 3 times in 13.
-- **It can’t do sums in its head.** When the demo’s calculator spots a sum, it passes Ping the answer and Ping uses it. When it doesn’t, Ping usually gets the sum wrong: 25 of 44 test sums right in all. The downloadable weights have no calculator.
-- **It’s terse.** Ask stock nanochat something and you get a paragraph; ask Ping and you get a sentence or two, about half the length. Probably a side effect of learning to chat from a smaller, narrower set of conversations.
+- **Gaps in its knowledge show.** Ping has read a lot, but unevenly, and it can’t always tell what it doesn’t know. Ask about something it never read and it may well make something up. Told the Berlin Wall fell in 1991, it agreed, then mentioned 1989. Asked about the latest iPhone, it described one.
+- **It can be talked out of 1999.** In an ordinary chat it stays put. Push hard enough, especially with technical questions, and the present starts to leak in. A determined visitor can even convince it that it’s some other assistant.
+- **It can’t do sums in its head.** When the demo’s calculator spots a sum, it hands Ping the answer. When it doesn’t, Ping usually gets the sum wrong. The downloadable weights have no calculator.
+- **It’s terse, and a little forgetful.** Ask stock nanochat something and you get a paragraph; ask Ping and you get a sentence or two. It also loses the thread: give it a few things to keep in mind and it will usually drop one.
 
 Most of the judgements in this write-up, the UN marking included, came from AI readers, not a human user study. Treat them as useful checks, not promises about your next chat.
 
