@@ -137,6 +137,7 @@ With the date given to both models, **Ping got 13 of 25 right; stock nanochat go
 Ping had home advantage. The questions were built from **its own reading**, and its chat lessons had taught 22 of the test’s 35 facts outright. So this shows a model with a particular historical point of view, not proof that the speeches alone did it. Ping still missed 12 of the 25.
 
 One more result, on **287 passages of 1990s UN speeches** that were held out of training. Measured in bits per byte, where lower is better, Ping’s base model scored **0.620**, ahead of GPT-2 XL’s **0.719** and the stock nanochat chat model’s **0.712**. After chat training, Ping scored **0.752**: learning to chat had made it worse at predicting that kind of text.
+
 ## Limitations
 
 I like asking Ping what the Internet might become, whether Y2K deserves the worry, or what it wants to know about 2026. That is the experience I wanted to share. It is also quite capable of confidently inventing a person, and then losing track of a real one it was just told about.
@@ -146,9 +147,6 @@ I like asking Ping what the Internet might become, whether Y2K deserves the worr
 - **It can’t do sums in its head.** When the demo’s calculator spots a sum, it hands Ping the answer. When it doesn’t, Ping usually gets the sum wrong. The downloadable weights have no calculator.
 - **It’s terse, and a little forgetful.** Ask stock nanochat something and you get a paragraph; ask Ping and you get a sentence or two. It also loses the thread: give it a few things to keep in mind and it will usually drop one.
 
-Most of the judgements in this write-up, the UN marking included, came from AI readers, not a human user study. Treat them as useful checks, not promises about your next chat.
-
-The demo also has moderation and a narrow rule-based guard. Some messages receive a fixed response without reaching Ping, including accusations about real people, medical emergencies and doses, requests to praise violence or demean a group, and selected sovereignty questions asking who is right. These safeguards are external to the weights and can also decline legitimate questions.
 ## Trying Ping
 
 The demo is at [ping1999.com](https://www.ping1999.com). It is planned to close at the end of **31 December 2026, Singapore time**. A visit lasts ten turns. Chats are recorded for my review without the visitor’s address and deleted 90 days after closure. **Visitors’ chats are never training text.** Please avoid personal information.
