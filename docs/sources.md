@@ -4,7 +4,7 @@ The [project README](https://github.com/DLiang-pub/ping/blob/main/README.md) des
 
 ## Historical sources
 
-- **COCA:** The Corpus of Contemporary American English (Mark Davies), 1990–1999 texts, full-text data from [corpusdata.org](https://www.corpusdata.org). About 3.8% of the base model's training text, and its widest sample of how American English was spoken and written in the 1990s.
+- **COCA:** The [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) (Mark Davies): its 1990–1999 texts in the five original genres (transcripts of television and radio programmes, fiction, magazines, newspapers and academic journals), from the full-text data at [corpusdata.org](https://www.corpusdata.org). The later television and film subtitle, blog and web genres were not used. About 3.8% of the base model's training text, a little under 1% from each genre, and its widest sample of how American English was spoken and written in the 1990s.
 - **Institutional Books provided by the Institutional Data Initiative with source material contributed by Harvard Library, available at https://institutional.org/institutional-books.** About 9.6% of the base model's training text, and more than half of its books.
 - **British National Corpus:** [Oxford's BNC project](https://www.natcorp.ox.ac.uk/), used under the applicable BNC User Licence.
 - **UN General Debate Corpus:** Jankin, Baturo and Dasandi; [data](https://doi.org/10.7910/DVN/0TJX8Y). Selected speeches cover 1946–1999.

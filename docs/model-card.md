@@ -192,7 +192,7 @@ The accompanying code is **MIT licensed**. Data sources have separate terms; nei
 
 Historical sources include Institutional Books, COCA, BNC, encyclopedias from 1999, Usenet, UN and parliamentary records, newspapers and scientific literature. Usenet posts remain their authors’ copyright; proprietary reference text is not redistributed. No blanket open-data claim is made. [Source credits](sources.md).
 
-- **COCA:** The Corpus of Contemporary American English (Mark Davies), 1990–1999 texts, full-text data from https://www.corpusdata.org. About 3.8% of the base model's training text.
+- **COCA:** The [Corpus of Contemporary American English](https://www.english-corpora.org/coca/) (Mark Davies): 1990–1999 texts in its five original genres (spoken, fiction, magazines, newspapers, academic), full-text data from https://www.corpusdata.org. About 3.8% of the base model's training text.
 - **Institutional Books:** Institutional Books provided by the Institutional Data Initiative with source material contributed by Harvard Library, available at https://institutional.org/institutional-books. About 9.6% of the base model's training text.
 - **British National Corpus:** [BNC source page](https://www.natcorp.ox.ac.uk/), under the applicable BNC User Licence.
 - **UN records:** General Debate Corpus (Jankin, Baturo and Dasandi); Security Council records (Sakamoto and Matsuoka). [Source credits](sources.md).

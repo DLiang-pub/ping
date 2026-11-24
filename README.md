@@ -22,7 +22,7 @@ This is harder than it looks. Ping needed billions of words, all of them publish
 
 Most of what was written in Ping’s own decades still belongs to somebody. Nearly every English-language newspaper and magazine from the 1970s onward is still in copyright, and so are most books from the second half of the century. That rules out a huge share of the text that recorded those years as they happened. Even the Library of Congress’s free newspaper archive, which most of Ping’s newspapers come from, stops at 1963, because American papers published after that are generally still in copyright.
 
-What is left makes for an odd diet. Government and parliamentary records are plentiful and mostly free to use. Old books and newspapers are largely out of copyright. The everyday voice of the 1980s and 1990s survives in bulk on Usenet, the period’s public discussion groups. For late-century journalism, fiction and speech, Ping has licensed research samples: COCA for American English of the 1990s, and the British National Corpus for British English. So it has read a great deal of Hansard, Congress and Usenet, and very little 1990s journalism.
+What is left makes for an odd diet. Government and parliamentary records are plentiful and mostly free to use. Old books and newspapers are largely out of copyright. The everyday voice of the 1980s and 1990s survives in bulk on Usenet, the period’s public discussion groups. For late-century journalism, fiction and speech, Ping has licensed research samples: [COCA](https://www.english-corpora.org/coca/) for American English of the 1990s (newspapers, magazines, fiction, academic journals, and transcripts of television and radio talk), and the British National Corpus for British English. So it has read a great deal of Hansard, Congress and Usenet, and very little 1990s journalism.
 
 Scans have mistakes and websites disappear, too. In the end the corpus came from about 70 sources: public-domain material, openly licensed collections and some restricted ones. It holds about **14 billion tokens** of distinct text. The scarcer and more conversational material was read more than once and the largest collections were sampled, which is how 14 billion became the 20.1 billion tokens the base model trained on.
 
@@ -34,7 +34,7 @@ What counted was when the words were published, not when a file was scanned or d
 | Parliamentary and government publications | Published by 1999; Irish debates from 1919 | Hansard, Oireachtas, US government publications, Foreign Relations of the United States |
 | Newspapers | American Stories: 1920–1963; other selected issues by 1999 | American Stories; headlines and opening lines from old Singapore papers |
 | Informal discussion | Posts dated by 31 December 1999 | Usenet groups discussing everyday life, computers, entertainment and other interests |
-| Books and language corpora | Books published by 1999; COCA’s 1990–1999 texts | Institutional Books, Project Gutenberg, COCA, [British National Corpus](https://www.natcorp.ox.ac.uk/) |
+| Books and language corpora | Books published by 1999; COCA’s 1990–1999 texts | Institutional Books, Project Gutenberg, [COCA](https://www.english-corpora.org/coca/) (spoken, fiction, magazines, newspapers, academic journals), [British National Corpus](https://www.natcorp.ox.ac.uk/) |
 | Science and technical writing | Published by 1999; arXiv abstracts from 1991–1999 | PubMed, PubMed Central, arXiv, NASA, USGS, patent text |
 | Reference works | Britannica’s 1910–1911 edition; encyclopedias from 1999; other selected text published by 1999 | Encyclopedias, reference books and country studies |
 | Code and documentation | Releases dated by 1999 | Operating-system and language sources, software manuals |
@@ -54,15 +54,17 @@ And by share of what the base model read:
 | Code and documentation | 2.0% |
 | Verse, case law and geological surveys | 4.1% |
 
+COCA and the British National Corpus are counted under books and language corpora, though both also hold newspapers, magazines, academic writing and transcribed speech.
+
 The corpus and my lesson files are not distributed.
 
 ### What’s missing
 
 The biggest gaps are some of the things the era is best remembered for:
 
-- **Films and television.** No subtitles or broadcast archives. COCA adds transcripts of 1990s news and talk shows, but Ping knows the decade’s films and sitcoms mostly second-hand, from reviews and Usenet arguments.
+- **Films and television.** No subtitles or broadcast archives. COCA adds transcripts of 1990s news and talk shows and about 220 screenplays, but Ping knows the decade’s films and sitcoms mostly second-hand, from reviews and Usenet arguments.
 - **Song lyrics.** No lyrics sites, and the Usenet group where fans posted lyrics was left out. Ping knows the decade’s songs mostly from people talking about them.
-- **Big newspapers.** No newspaper archives from the 1970s on. Ping’s 1990s journalism is largely research samples, and most of its newspapers are American papers from before 1964.
+- **Big newspapers.** No newspaper archives from the 1970s on. Ping’s 1990s journalism is largely the newspaper and magazine samples in COCA and the BNC, and most of its newspapers are American papers from before 1964.
 - **Modern books.** The bestsellers of Ping’s own decades are still in copyright. Its books are mostly old ones; later books reach it mainly through government publications and the samples in COCA and the BNC.
 - **The web.** Old websites aren’t available in bulk, so Ping read almost none of the 1990s web. Usenet is the closest it gets.
 
